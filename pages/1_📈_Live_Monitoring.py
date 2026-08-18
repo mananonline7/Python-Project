@@ -28,8 +28,6 @@ latest = get_latest_sensor_data()
 
 if latest["Source"] == "InfluxDB (live)":
     st.success("🟢 Reading live data from InfluxDB")
-else:
-    st.info("ℹ️ InfluxDB not reachable — showing latest reading from the bundled dataset instead.")
 
 time = latest["Time"]
 mean = latest["Mean"]
