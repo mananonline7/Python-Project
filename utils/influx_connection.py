@@ -1,7 +1,11 @@
 import os
+from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 from influxdb_client_3 import InfluxDBClient3
+
+CSV_FALLBACK_PATH = Path(__file__).resolve().parent.parent / "data" / "dataset_from_influxdb.csv"
 
 # -----------------------------------
 # InfluxDB Configuration
@@ -33,8 +37,12 @@ client = InfluxDBClient3(
 # -----------------------------------
 # Get Latest Sensor Features
 # -----------------------------------
+# Tries live InfluxDB first (for local/real deployments). If InfluxDB is
+# unreachable — e.g. this app is hosted online with no public InfluxDB
+# server configured — falls back to the latest row of the bundled dataset
+# export so the page still has something real to show.
 
-def get_latest_sensor_data():
+def _get_latest_from_influxdb():
 
     query = """
     SELECT *
@@ -56,5 +64,32 @@ def get_latest_sensor_data():
         "RMS": latest["RMS"],
         "Std": latest["Std"],
         "Label": latest["Label"],
-        "Time": latest["time"]
+        "Time": latest["time"],
+        "Source": "InfluxDB (live)"
     }
+
+
+def _get_latest_from_csv():
+
+    df = pd.read_csv(CSV_FALLBACK_PATH)
+
+    latest = df.sort_values("time").iloc[-1]
+
+    return {
+        "Mean": latest["Mean"],
+        "Peak": latest["Peak"],
+        "Peak_to_Peak": latest["Peak_to_Peak"],
+        "RMS": latest["RMS"],
+        "Std": latest["Std"],
+        "Label": latest["Label"],
+        "Time": latest["time"],
+        "Source": "Dataset snapshot (InfluxDB unavailable)"
+    }
+
+
+def get_latest_sensor_data():
+
+    try:
+        return _get_latest_from_influxdb()
+    except Exception:
+        return _get_latest_from_csv()

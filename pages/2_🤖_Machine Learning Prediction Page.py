@@ -21,8 +21,11 @@ from utils.db import get_connection
 
 try:
 
-    # Read latest sensor features from InfluxDB
+    # Read latest sensor features from InfluxDB (falls back to dataset snapshot if unreachable)
     latest = get_latest_sensor_data()
+
+    if latest["Source"] != "InfluxDB (live)":
+        st.info("ℹ️ InfluxDB not reachable — running prediction on the latest reading from the bundled dataset instead.")
 
     mean = latest["Mean"]
     peak = latest["Peak"]
