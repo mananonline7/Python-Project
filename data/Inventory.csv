@@ -1,0 +1,13 @@
+SparePart_ID,Part_Name,Quantity,Supplier,Reorder_Level,Maintenance_ID
+1,None,0,N/A,0,
+2,Bearing Assembly,1,SKF,2,
+3,Bearing Assembly,1,SKF,2,
+4,Bearing Assembly,1,SKF,2,
+5,None,0,N/A,0,
+6,Bearing Assembly,1,SKF,2,
+7,Bearing Assembly,1,SKF,2,
+8,Bearing Assembly,1,SKF,2,
+9,None,0,N/A,0,
+10,Bearing Assembly,1,SKF,2,
+11,Bearing Assembly,1,SKF,2,
+12,Bearing Assembly,1,SKF,2,

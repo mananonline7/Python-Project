@@ -1,0 +1,13 @@
+Prediction_ID,Machine_ID,Prediction_Time,Predicted_Fault,Confidence,Model_Name
+1,1,2026-07-21 07:00:08,Healthy,0.99,Random Forest
+2,2,2026-07-21 07:00:08,Inner Race Fault,0.98,Random Forest
+3,3,2026-07-21 07:00:08,Outer Race Fault,0.97,XGBoost
+4,4,2026-07-21 07:00:08,Ball Fault,0.96,XGBoost
+5,1,2026-07-25 23:11:27,Healthy,0.99,Random Forest
+6,2,2026-07-25 23:11:27,Inner Race Fault,0.98,Random Forest
+7,3,2026-07-25 23:11:27,Outer Race Fault,0.97,XGBoost
+8,4,2026-07-25 23:11:27,Ball Fault,0.96,XGBoost
+9,1,2026-07-26 00:23:25,Healthy,0.99,Random Forest
+10,2,2026-07-26 00:23:25,Inner Race Fault,0.98,Random Forest
+11,3,2026-07-26 00:23:25,Outer Race Fault,0.97,XGBoost
+12,4,2026-07-26 00:23:25,Ball Fault,0.96,XGBoost

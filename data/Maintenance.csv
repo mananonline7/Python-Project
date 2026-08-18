@@ -1,0 +1,13 @@
+Maintenance_ID,Prediction_ID,Maintenance_Action,Priority,Maintenance_Status,Scheduled_Date
+1,,Continue Condition Monitoring,Low,Pending,2026-07-21 07:14:10
+2,,Schedule Bearing Replacement,High,Pending,2026-07-21 07:14:10
+3,,Schedule Bearing Replacement,High,Pending,2026-07-21 07:14:10
+4,,Immediate Inspection and Bearing Replacement,Medium,Pending,2026-07-21 07:14:10
+5,,Continue Condition Monitoring,Low,Pending,2026-07-25 23:11:27
+6,,Schedule Bearing Replacement,High,Pending,2026-07-25 23:11:27
+7,,Schedule Bearing Replacement,High,Pending,2026-07-25 23:11:27
+8,,Immediate Inspection and Bearing Replacement,Medium,Pending,2026-07-25 23:11:27
+9,,Continue Condition Monitoring,Low,Pending,2026-07-26 00:23:26
+10,,Schedule Bearing Replacement,High,Pending,2026-07-26 00:23:26
+11,,Schedule Bearing Replacement,High,Pending,2026-07-26 00:23:26
+12,,Immediate Inspection and Bearing Replacement,Medium,Pending,2026-07-26 00:23:26

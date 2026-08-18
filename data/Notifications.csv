@@ -1,0 +1,8 @@
+Notification_ID,WorkOrder_ID,Recipient,Notification_Type,Subject,Date_Sent,Status
+19,WO1001,maintenance@company.com,Maintenance,Machine Healthy,2026-07-26 00:23:58,Sent
+20,WO1002,maintenance@company.com,Maintenance,Bearing Replacement Required,2026-07-26 00:23:58,Sent
+21,WO1003,maintenance@company.com,Maintenance,Bearing Replacement Required,2026-07-26 00:23:58,Sent
+22,WO1004,maintenance@company.com,Maintenance,Urgent Bearing Inspection Required,2026-07-26 00:23:58,Sent
+23,WO1002,inventory@company.com,Inventory,Reserve Bearing Assembly,2026-07-26 00:23:58,Sent
+24,WO1003,inventory@company.com,Inventory,Reserve Bearing Assembly,2026-07-26 00:23:58,Sent
+25,WO1004,inventory@company.com,Inventory,Urgent Bearing Assembly Required,2026-07-26 00:23:58,Sent

@@ -1,0 +1,13 @@
+Machine_ID,Machine_Name,Equipment_Type,Bearing_Type,Location
+1,Motor-101,Electric Motor,6205,Production Line A
+2,Motor-102,Electric Motor,6205,Production Line B
+3,Pump-201,Centrifugal Pump,6207,Pump Station
+4,Fan-301,Industrial Fan,6203,Cooling Unit
+5,Motor-101,Electric Motor,6205,Production Line A
+6,Motor-102,Electric Motor,6205,Production Line B
+7,Pump-201,Centrifugal Pump,6207,Pump Station
+8,Fan-301,Industrial Fan,6203,Cooling Unit
+9,Motor-101,Electric Motor,6205,Production Line A
+10,Motor-102,Electric Motor,6205,Production Line B
+11,Pump-201,Centrifugal Pump,6207,Pump Station
+12,Fan-301,Industrial Fan,6203,Cooling Unit
