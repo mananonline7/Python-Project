@@ -7,7 +7,7 @@ st.set_page_config(page_title="Machine Learning Prediction",
                    page_icon="🤖",
                    layout="wide")
 
-st.title("🤖 Machine Learning Prediction")
+st.title("⚙️ Machine Learning Prediction")
 st.write("Random Forest based bearing fault diagnosis and maintenance recommendation.")
 st.divider()
 
@@ -23,9 +23,6 @@ try:
 
     # Read latest sensor features from InfluxDB (falls back to dataset snapshot if unreachable)
     latest = get_latest_sensor_data()
-
-    if latest["Source"] != "InfluxDB (live)":
-        st.info("ℹ️ InfluxDB not reachable — running prediction on the latest reading from the bundled dataset instead.")
 
     mean = latest["Mean"]
     peak = latest["Peak"]
